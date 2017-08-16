@@ -4,7 +4,7 @@
 //Body
 
 body{
-  //background-color: #8ED4C405;
+
 }
 
 //Header
@@ -12,13 +12,28 @@ header{
 
 }
 
+//Logo Holder
+.holder{
+  padding-top: 5%;
+  width: 100%;
+  margin:auto;
+  #logo{
+    width: 20%;
+    height: 20%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 
 
 //Footer
 footer{
-  background-color: #CCCCCC;
-  padding-bottom: 4%;
-  height: 100%;
+  background-color: #2E2F30;
+  //padding-bottom: 4%;
+  //height: 100%;
   margin: 0;
   ul {
     width: 11.5%;

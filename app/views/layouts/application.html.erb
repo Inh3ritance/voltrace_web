@@ -11,7 +11,9 @@
 
   <body>
     <%= render 'layouts/header'%>
-    <%= image_tag("voltrace_logo.png", alt: "Voltrace Logo")%>
+    <div class = "holder">
+      <%= image_tag("voltrace_logo.png", alt: "Voltrace Logo", id: "logo")%>
+    </div>
     <%= yield %>
     <%= render 'layouts/footer'%>
   </body>
