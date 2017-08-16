@@ -16,5 +16,15 @@ header{
 
 //Footer
 footer{
-
+  background-color: #CCCCCC;
+  padding-bottom: 4%;
+  height: 100%;
+  margin: 0;
+  ul {
+    width: 11.5%;
+    li {
+      width: 100%;
+      //padding-left: 50%;
+    }
+  }
 }
