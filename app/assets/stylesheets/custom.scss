@@ -24,8 +24,8 @@ header{
     margin-left: auto;
     margin-right: auto;
   }
-
 }
+
 //Ad for Magnets and DremJump
 #ad_hold{
   border-style: solid;
@@ -35,10 +35,53 @@ header{
   margin-left: auto;
   margin-right: auto;
   //This is just to get an idea of how it'll look
-  height: 160px;
+  height: 300px;
+  margin-top: 2%;
+  position: relative;
+
+  //Universal to All Ad Scenes
   .ad{
     position: absolute;
+    height: 100%;
+    width: 100%;
   }
+
+  //Main Panel
+  #main{
+    white-space: nowrap;
+    text-align: center;
+    z-index: 2;
+    #dummy{
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      width: 0;
+    }
+    .app_icon{
+      width: 10%;
+      vertical-align: middle;
+      display: inline-block;
+
+    }
+    #dj_icon{
+      margin-right:10%;
+    }
+    #mag_icon{
+      margin-left: 10%;
+    }
+  }
+
+  //Dream Jump Scene
+  #dj{
+    z-index: 1;
+    display:none;
+  }
+  //Magnets Scene
+  #mag{
+    z-index: 0;
+    display:none;
+  }
+
 }
 
 
