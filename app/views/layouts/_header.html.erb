@@ -1,9 +1,10 @@
 <header class = "navbar navbar-fixed-top navbar-inverse">
   <div class = "container">
+    <%= image_tag("voltrace_logo.png", alt: "Voltrace Logo", id: "bird_logo", class: "navbar-brand") %>
     <%= link_to "Voltrace", '#', id: "logo", class: "navbar-brand" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "",   root_path, class:"glyphicon glyphicon-home" %></li><!-- Home Icon to link to home page -->
         <li><%= link_to "About",   about_path %></li>
         <li><%= link_to "Contact Us", contact_us_path %></li>
       </ul>

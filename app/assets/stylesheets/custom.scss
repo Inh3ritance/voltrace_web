@@ -4,12 +4,25 @@
 //Body
 
 body{
-
+  text-align: center;
 }
 
 //Header
 header{
-
+  background-color:#2E2F30;
+  li{
+    font-size:100%;
+  }
+  #logo{
+    padding-right:1%;
+    font-size: 200%;
+  }
+  #bird_logo{
+    padding:1px;
+  }
+  .container{
+    margin-left:5% !important;
+  }
 }
 
 //Logo Holder
