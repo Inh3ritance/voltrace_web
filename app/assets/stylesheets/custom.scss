@@ -102,14 +102,19 @@ header{
 //Footer
 footer{
   background-color: #2E2F30;
-  //padding-bottom: 4%;
-  //height: 100%;
   margin: 0;
-  ul {
-    width: 11.5%;
-    li {
+  nav {
+    background-color: #2E2F30 !important;
+    ul {
       width: 100%;
-      //padding-left: 50%;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+      li {
+        width: 50%;
+        float: right !important;
+        margin-right: 5%;
+      }
     }
   }
 }
