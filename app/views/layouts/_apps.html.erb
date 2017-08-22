@@ -1,11 +1,19 @@
 <div id = "ad_hold">
 <div id = "main" class = "ad">
   <span id = 'dummy'></span>
-  <%= image_tag('dj_icon.png', alt:'Dream Jump Icon', class: 'app_icon', id: 'dj_icon', onclick: 'remove()')%>
-  <%= image_tag('magnets_icon.png', alt: 'Magnets Icon', class: 'app_icon', id: 'mag_icon', onclick: 'remove()')%>
+  <%= image_tag('dj_icon.png', alt:'Dream Jump Icon', class: 'app_icon', id: 'dj_icon', onclick: 'fade("#dj")')%>
+  <%= image_tag('magnets_icon.png', alt: 'Magnets Icon', class: 'app_icon', id: 'mag_icon', onclick: 'fade("#mag")')%>
 </div>
 <div id = "dj" class = "ad">
+  <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#dj")'>
+    <span class="glyphicon glyphicon-circle-arrow-left"></span>
+    <p>This is for dream jump</p>
+  </button>
 </div>
 <div id = "mag" class = "ad">
+  <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#mag")'>
+    <span class="glyphicon glyphicon-circle-arrow-left"></span>
+    <p>This is for magnets</p>
+  </button>
 </div>
 </div>

@@ -2,9 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-remove = (icon) ->
-  $('.app_icon').addClass('none')
+@fade = (icon) ->
+  $(icon).addClass('fadeIn')
 
+@fadeOut = (icon) ->
+  $(icon).removeClass('fadeIn')
 
 
 
