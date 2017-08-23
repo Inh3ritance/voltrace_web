@@ -8,6 +8,9 @@ class VoltraceMainController < ApplicationController
   def contact_us
   end
 
-  def privacy_policy
+  def dreamjump_privacy_policy
+  end
+
+  def magnets_privacy_policy
   end
 end

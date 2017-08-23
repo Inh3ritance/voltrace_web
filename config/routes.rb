@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   get '/contact_us', to: 'voltrace_main#contact_us'
 
-  get '/privacy_policy', to: 'voltrace_main#privacy_policy'
+  get '/dreamjump_privacy', to: 'voltrace_main#dreamjump_privacy_policy'
+
+  get '/magnets_privacy', to: 'voltrace_main#magnets_privacy_policy'
 
   root 'voltrace_main#home'
 end
