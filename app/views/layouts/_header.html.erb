@@ -4,14 +4,14 @@
     <%= link_to "Voltrace", '#', id: "logoheader", class: "navbar-brand prop" %>
     <nav>
       <div class="dropdown">
-        <div class = "glyphicon glyphicon-align-justify dropbtn" id = "menu" onclick = "myFunction()"></div>
+        <div class = "glyphicon glyphicon-align-justify dropbtn" id = "menu" onclick = "show()"></div>
         <div id="myDropdown" class="dropdown-content test">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" id ="topNav">
         <li><%= link_to "",   root_path, class:"glyphicon glyphicon-home" %></li>
         <li><%= link_to "About",   about_path %></li>
         <li><%= link_to "Contact Us", contact_us_path %></li>
