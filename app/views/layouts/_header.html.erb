@@ -1,10 +1,18 @@
 <header class = "navbar navbar-fixed-top navbar-inverse">
   <div class = "container">
     <%= image_tag("vl_192.png", alt: "Voltrace Logo", id: "bird_logo", class: "navbar-brand") %>
-    <%= link_to "Voltrace", '#', id: "logo", class: "navbar-brand" %>
+    <%= link_to "Voltrace", '#', id: "logo", class: "navbar-brand prop" %>
     <nav>
+      <div class="dropdown">
+        <div class = "glyphicon glyphicon-align-justify dropbtn" id = "menu" onclick = "myFunction()"></div>
+        <div id="myDropdown" class="dropdown-content test">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "",   root_path, class:"glyphicon glyphicon-home" %></li><!-- Home Icon to link to home page -->
+        <li><%= link_to "",   root_path, class:"glyphicon glyphicon-home" %></li>
         <li><%= link_to "About",   about_path %></li>
         <li><%= link_to "Contact Us", contact_us_path %></li>
       </ul>
