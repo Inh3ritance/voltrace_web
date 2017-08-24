@@ -1,7 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
 //Helpers
 //Coffeescript Test
 .test{
@@ -60,8 +59,6 @@ header{
     display:inline !important;
   }
 
-  ///
-
   background-color:#2E2F30;
   li{
     font-size:100%;
@@ -86,7 +83,7 @@ header{
   li{
     font-size:100%;
   }
-  #logo{
+  #logoheader{
     padding-right:1%;
     font-size: 200%;
   }
@@ -194,8 +191,6 @@ header{
 
   }
 }
-
-
 
 //Footer
 footer{
