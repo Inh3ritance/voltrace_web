@@ -3,6 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 dj = "#dj"
 mag = "#mag"
+adSize = 0;
+divSize = 0;
+logoSize = 0;
 
 @fade = (scene) ->
   $(scene).addClass('fadeIn')
@@ -42,3 +45,18 @@ window.onclick = (event) ->
 @checkShow = (openDropdown) ->
   if openDropdown.classList.contains('show')
     openDropdown.classList.remove('show')
+
+@resizeAll = () ->
+  divSize = window.innerHeight - $('header').height() - $('footer').height()
+  $('body').css('padding-top', $('header').height() + "px")
+  $('#ad_hold').width((window.innerWidth*2)/3)
+  $('#yield').height(divSize/2)
+  $('.holder').height(divSize/2)
+  if window.innerWidth >= window.innerHeight
+    adSize = window.innerHeight/3
+    logoSize = 20;
+  else
+    adSize = window.innerHeight/4
+    logoSize = 35;
+  $('#ad_hold').height(adSize)
+  $('#logo').width(logoSize +  '%')

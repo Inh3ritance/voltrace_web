@@ -11,13 +11,14 @@
 
 </head>
 
-  <body onload="startLoop()" onresize="startLoop()">
+  <body onload="startLoop(); resizeAll()" onresize="startLoop(); resizeAll()">
     <%= render 'layouts/header'%>
     <div class = "holder">
-      <h1 id = "title-content"></h1>
       <%= image_tag("voltrace_logo.png", alt: "Voltrace Logo", id: "logo")%>
     </div>
-    <%= yield %>
+    <div id = 'yield'>
+      <%= yield %>
+    </div>
     <%= render 'layouts/footer'%>
   </body>
 </html>
