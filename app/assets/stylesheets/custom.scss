@@ -17,15 +17,18 @@
 
 //Body
 body{
-  text-align: center;
+  text-align: right; // used to be center
   height: 100%;
   padding-top: 50px;
 }
 
 //Header
 header{
+
   display: block !important;
+
   .dropbtn {
+    display: block;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -39,13 +42,14 @@ header{
   }
 
   .dropdown-content {
+    left:auto; // only works with position:relative;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
   }
 
   .dropdown-content a {
@@ -58,7 +62,7 @@ header{
   .dropdown a:hover {background-color: #f1f1f1}
 
   .show {
-    display:inline !important;
+    display:block !important;
   }
 
   background-color:#2E2F30;
@@ -66,9 +70,8 @@ header{
     font-size:100%;
   }
   #menu{
-    display:inline;
+    display:inline-block;
     font-size:30px;
-    float:right;
   }
   #logo{
     padding-right:1%;
@@ -94,6 +97,7 @@ header{
   .container{
     margin-left:5% !important;
   }
+
 }
 
 //Logo Holder

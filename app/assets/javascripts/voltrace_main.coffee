@@ -6,6 +6,7 @@ mag = "#mag"
 adSize = 0;
 divSize = 0;
 logoSize = 0;
+isdropped = false
 
 @fade = (scene) ->
   $(scene).addClass('fadeIn')
@@ -27,15 +28,25 @@ logoSize = 0;
 @loop = (a, b) ->
   i = 0
   listItems = a
+  dropdown = $('.dropdown-content')
   if window.innerWidth < 700 #arbitrary number
     listItem.style.display = 'none' for listItem in listItems
     b.css({visibility: 'visible'})
   else
     listItem.style.display = 'unset' for listItem in listItems
     b.css({visibility: 'hidden'})
+    if isdropped
+      @checkShow drop for drop in dropdown
+      isdropped = not isdropped
 #show dropdown
 @show = () ->
-  $('#myDropdown').addClass('show')
+  dropdown = $('.dropdown-content')
+  if isdropped
+    @checkShow drop for drop in dropdown
+    isdropped = not isdropped
+  else
+    $('#myDropdown').addClass('show')
+    isdropped = true
 
 window.onclick = (event) ->
   if not event.target.matches('.dropbtn')
