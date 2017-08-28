@@ -29,7 +29,7 @@ isdropped = false
   i = 0
   listItems = a
   dropdown = $('.dropdown-content')
-  if window.innerWidth < 700 #arbitrary number
+  if window.innerWidth < 770 #arbitrary number
     listItem.style.display = 'none' for listItem in listItems
     b.css({visibility: 'visible'})
   else
