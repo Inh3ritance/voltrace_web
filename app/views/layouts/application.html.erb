@@ -17,8 +17,15 @@
       <%= image_tag("voltrace_logo.png", alt: "Voltrace Logo", id: "logo")%>
     </div>
     <div id = 'yield'>
-      <%= yield %>
+      <%= yield() %>
     </div>
     <%= render 'layouts/footer'%>
+    <%= yield(:scripts) %>
   </body>
 </html>
+
+<% content_for :scripts %>
+<%= javascript_tag do %>
+    startLoop();
+    resizeAll();
+<% end %>
