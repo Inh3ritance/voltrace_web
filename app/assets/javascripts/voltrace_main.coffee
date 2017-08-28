@@ -60,7 +60,7 @@ window.onclick = (event) ->
 @resizeAll = () ->
   divSize = window.innerHeight - $('header').height() - $('footer').height()
   $('body').css('padding-top', $('header').height() + "px")
-  $('#ad_hold').width((window.innerWidth*2)/3)
+  $('#ad_hold').width((window.innerWidth*3)/5)
   $('#yield').height(divSize/2)
   $('.holder').height(divSize/2)
   if window.innerWidth >= window.innerHeight

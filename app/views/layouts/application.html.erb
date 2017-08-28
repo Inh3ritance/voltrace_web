@@ -14,7 +14,7 @@
   <body onload="startLoop(); resizeAll()" onresize="startLoop(); resizeAll()">
     <%= render 'layouts/header'%>
     <div class = "holder">
-      <%= image_tag("voltrace_logo.png", alt: "Voltrace Logo", id: "logo")%>
+      <%= image_tag('voltrace_logo.png', alt: 'Voltrace Logo', id: 'logo')%>
     </div>
     <div id = 'yield'>
       <%= yield() %>
