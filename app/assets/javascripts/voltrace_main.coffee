@@ -45,7 +45,7 @@ isdropped = false
     @checkShow drop for drop in dropdown
     isdropped = not isdropped
   else
-    $('#myDropdown').addClass('show')
+    $('#vDropdown').addClass('show')
     isdropped = true
 
 window.onclick = (event) ->
