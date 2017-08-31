@@ -1,25 +1,35 @@
 <div id = "ad_hold">
-<div id = "main" class = "ad">
-  <span class = 'dummy'></span>
-  <%= image_tag('dj_icon.png', alt:'Dream Jump Icon', class: 'app_icon', id: 'dj_icon', onclick: 'fade("#dj")')%>
-  <%= image_tag('magnets_icon.png', alt: 'Magnets Icon', class: 'app_icon', id: 'mag_icon', onclick: 'fade("#mag")')%>
-</div>
-<div id = "dj" class = "ad">
-  <%= image_tag('dj_ss1.png', alt: 'Dream Jump Screenshot 1') %>
-  <%= image_tag('dj_ss2.png', alt: 'Dream Jump Screenshot 2') %>
-  <%= image_tag('dj_ss3.png', alt: 'Dream Jump Screenshot 3') %>
-  <%= image_tag('dj_ss4.png', alt: 'Dream Jump Screenshot 4') %>
-  <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#dj")'>
-    <span class="glyphicon glyphicon-circle-arrow-left">This is for dream jump</span>
-  </button>
-</div>
-<div id = "mag" class = "ad">
-  <%= image_tag('mag_ss1.png', alt: 'Magnets Screenshot 1') %>
-  <%= image_tag('mag_ss2.png', alt: 'Magnets Screenshot 2') %>
-  <%= image_tag('mag_ss3.png', alt: 'Magnets Screenshot 3') %>
-  <%= image_tag('mag_ss4.png', alt: 'Magnets Screenshot 4') %>
-  <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#mag")'>
-    <span class="glyphicon glyphicon-circle-arrow-left">This is for magnets</span>
-  </button>
-</div>
+  <div id = "main" class = "ad">
+    <span class = 'dummy'></span>
+    <%= image_tag('dj_icon.png', alt:'Dream Jump Icon', class: 'app_icon', id: 'dj_icon', onclick: 'fade("#dj")')%>
+    <%= image_tag('magnets_icon.png', alt: 'Magnets Icon', class: 'app_icon', id: 'mag_icon', onclick: 'fade("#mag")')%>
+    <%= image_tag('tbc-alexa-icon.png', alt: 'TextbookCheck Icon', class: 'app_icon', id: 'tbc_icon', onclick: 'fade("#tbc")')%>
+  </div>
+  <div id = "dj" class = "ad">
+    <%= image_tag('dj_ss1.png', alt: 'Dream Jump Screenshot 1', class: 'fadeImg') %>
+    <%= image_tag('dj_ss2.png', alt: 'Dream Jump Screenshot 2', class: 'fadeImg') %>
+    <%= image_tag('dj_ss3.png', alt: 'Dream Jump Screenshot 3', class: 'fadeImg') %>
+    <%= image_tag('dj_ss4.png', alt: 'Dream Jump Screenshot 4', class: 'fadeImg') %>
+    <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#dj")'>
+      <span class="glyphicon glyphicon-circle-arrow-left">This is for dream jump</span>
+    </button>
+  </div>
+  <div id = "mag" class = "ad">
+    <%= image_tag('mag_ss1.png', alt: 'Magnets Screenshot 1', class: 'fadeImg') %>
+    <%= image_tag('mag_ss2.png', alt: 'Magnets Screenshot 2', class: 'fadeImg') %>
+    <%= image_tag('mag_ss3.png', alt: 'Magnets Screenshot 3', class: 'fadeImg') %>
+    <%= image_tag('mag_ss4.png', alt: 'Magnets Screenshot 4', class: 'fadeImg') %>
+    <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#mag")'>
+      <span class="glyphicon glyphicon-circle-arrow-left">This is for magnets</span>
+    </button>
+  </div>
+  <div id = "tbc" class = "ad">
+    <%= image_tag('mag_ss1.png', alt: 'TextbookCheck Screenshot 1', class: 'fadeImg') %>
+    <%= image_tag('mag_ss2.png', alt: 'TextbookCheck Screenshot 2', class: 'fadeImg') %>
+    <%= image_tag('mag_ss3.png', alt: 'TextbookCheck Screenshot 3', class: 'fadeImg') %>
+    <%= image_tag('mag_ss4.png', alt: 'TextbookCheck Screenshot 4', class: 'fadeImg') %>
+    <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#tbc")'>
+      <span class="glyphicon glyphicon-circle-arrow-left">This is for textbookCheck</span>
+    </button>
+  </div>
 </div>

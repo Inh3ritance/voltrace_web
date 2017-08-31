@@ -13,8 +13,11 @@ isdropped = false
   $('.privacy').addClass('fadeIn')
   if scene is dj
     $('.privacy').attr('href', '/dreamjump_privacy');
-  else
+  else if scene is mag
     $('.privacy').attr('href', '/magnets_privacy');
+  else
+    $('.privacy').attr('href', '/textbookCheck_privacy')
+
 
 @fadeOut = (scene) ->
   $(scene).removeClass('fadeIn')
@@ -71,3 +74,10 @@ window.onclick = (event) ->
     logoSize = 35;
   $('#ad_hold').height(adSize)
   $('#logo').width(logoSize +  '%')
+
+@activateScene = (icon, info, apple0, google) ->
+  $(icon).transition({y: '10px', opacity: 1})
+  $(info).transition(opacity: 1, delay: 500)
+  $(apple0).transition(x: '-10%', delay: 1000)
+  $(google).transition(x: '10%', delay:1000)
+
