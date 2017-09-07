@@ -24,6 +24,7 @@
 
 .noDisplay{  display: none;  }
 .upFront{ z-index: 2}
+.inFront{z-index: 5}
 
 //Fade in For Ad Scenes
 .fadeIn{
@@ -180,7 +181,7 @@ header{
 
 }
 
-//Ad for Magnets and DremJump
+//Ad Space for Dream Jump, Magnets, and TextbookCheck
 #ad_hold {
   border: 2px solid black;
   border-radius: 5px;
@@ -193,8 +194,11 @@ header{
 
   .fadeImg{
     position:absolute;
-    display:block;
+    display:inline;
     left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     animation-name: imgFade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -209,6 +213,55 @@ header{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    .infoHolder{
+      background-color: transparent;
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+      .infoIcon{
+        width: 12%;
+        margin: auto;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        display: block;
+        opacity: 0;
+        margin-bottom: 10px;
+      }
+      .infoText{
+        display:block;
+        text-align: center;
+        margin: auto;
+        color: white;
+        font-size: 1.5em;
+        padding-bottom: 2.5%;
+        opacity: 0;
+      }
+      .store_icon{
+        width: 20%;
+        display: inline;
+        float: left;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+      }
+      .google_icon{
+        margin-left: 25%;
+      }
+      .apple_icon{
+        padding-top: 0.9%;
+        margin-left: 10%;
+      }
+      .alexa_icon{
+        margin-top: 10px;
+        margin-left: 40%;
+      }
+      .backButton{
+        display: block;
+        float: left;
+        position: absolute;
+        margin-top: 11%;
+      }
+    }
   }
   //Main Panel
   #main{
@@ -244,13 +297,13 @@ header{
     }
     //App Icons
     #dj_icon{
-      margin-right:5%;
+      margin-right:10%;
     }
     #mag_icon{
       margin: 0;
     }
     #tbc_icon{
-      margin-left: 5%;
+      margin-left: 10%;
     }
   }
 
@@ -262,16 +315,16 @@ header{
     transition: all 0.4s;
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
-    img:nth-of-type(1){
+    .fadeImg:nth-of-type(1){
       animation-delay: 60s;
     }
-    img:nth-of-type(2){
+    .fadeImg:nth-of-type(2){
       animation-delay: 40s;
     }
-    img:nth-of-type(3){
+    .fadeImg:nth-of-type(3){
       animation-delay: 20s;
     }
-    img:nth-of-type(4){
+    .fadeImg:nth-of-type(4){
       animation-delay: 0s;
     }
 
@@ -284,16 +337,16 @@ header{
     transition: all 0.4s;
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
-    img:nth-of-type(1){
+    .fadeImg:nth-of-type(1){
       animation-delay: 60s;
     }
-    img:nth-of-type(2){
+    .fadeImg:nth-of-type(2){
       animation-delay: 40s;
     }
-    img:nth-of-type(3){
+    .fadeImg:nth-of-type(3){
       animation-delay: 20s;
     }
-    img:nth-of-type(4){
+    .fadeImg:nth-of-type(4){
       animation-delay: 0s;
     }
   }
@@ -306,16 +359,16 @@ header{
     transition: all 0.4s;
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
-    img:nth-of-type(1){
+    .fadeImg:nth-of-type(1){
       animation-delay: 60s;
     }
-    img:nth-of-type(2){
+    .fadeImg:nth-of-type(2){
       animation-delay: 40s;
     }
-    img:nth-of-type(3){
+    .fadeImg:nth-of-type(3){
       animation-delay: 20s;
     }
-    img:nth-of-type(4){
+    .fadeImg:nth-of-type(4){
       animation-delay: 0s;
     }
   }

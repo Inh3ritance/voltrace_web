@@ -6,30 +6,58 @@
     <%= image_tag('tbc-alexa-icon.png', alt: 'TextbookCheck Icon', class: 'app_icon', id: 'tbc_icon', onclick: 'fade("#tbc")')%>
   </div>
   <div id = "dj" class = "ad">
+    <div class = 'infoHolder'>
+      <%= image_tag('dj_icon.png', alt: 'Dream Jump Icon', id: 'djIconSmooth', class: 'infoIcon') %>
+      <p class = 'infoText' id = 'djText'>A unique and colorful endless jumper</p>
+      <a href='https://play.google.com/store/apps/details?id=com.Voltrace.dreamJump'>
+        <%= image_tag('google_play.png', alt: 'Get it on Google Play', class: 'store_icon google_icon', id: 'djGoogle')%>
+      </a>
+      <a href='https://itunes.apple.com/us/app/dream-jump/id1170741674'>
+        <%= image_tag('app_store.svg', alt: 'Get it on the App Store', class: 'store_icon apple_icon', id: 'djApple')%>
+      </a>
+      <button type="button" class="btn btn-info btn-sm backButton" onclick='fadeOut("#dj")'>
+        <span class="glyphicon glyphicon-circle-arrow-left"></span>
+      </button>
+    </div>
     <%= image_tag('dj_ss1.png', alt: 'Dream Jump Screenshot 1', class: 'fadeImg') %>
     <%= image_tag('dj_ss2.png', alt: 'Dream Jump Screenshot 2', class: 'fadeImg') %>
     <%= image_tag('dj_ss3.png', alt: 'Dream Jump Screenshot 3', class: 'fadeImg') %>
     <%= image_tag('dj_ss4.png', alt: 'Dream Jump Screenshot 4', class: 'fadeImg') %>
-    <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#dj")'>
-      <span class="glyphicon glyphicon-circle-arrow-left">This is for dream jump</span>
-    </button>
   </div>
   <div id = "mag" class = "ad">
+    <div class = 'infoHolder'>
+      <%= image_tag('magnets_icon.png', alt: 'Magnets Icon', id: 'magIconSmooth', class: 'infoIcon') %>
+      <p class = 'infoText' id = 'magText'>Survive and endless onsluaght of cannon fire</p>
+      <a href='https://play.google.com/store/apps/details?id=com.Voltrace.magnets&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+        <%= image_tag('google_play.png', alt: 'Get it on Google Play', class: 'store_icon google_icon', id: 'magGoogle')%>
+      </a>
+      <a href='https://itunes.apple.com/us/app/magnets/id1264132288?mt=8'>
+        <%= image_tag('app_store.svg', alt: 'Get it on the App Store', class: 'store_icon apple_icon', id: 'magApple')%>
+      </a>
+      <button type="button" class="btn btn-info btn-sm backButton" onclick='fadeOut("#mag")'>
+        <span class="glyphicon glyphicon-circle-arrow-left"></span>
+      </button>
+    </div>
     <%= image_tag('mag_ss1.png', alt: 'Magnets Screenshot 1', class: 'fadeImg') %>
     <%= image_tag('mag_ss2.png', alt: 'Magnets Screenshot 2', class: 'fadeImg') %>
     <%= image_tag('mag_ss3.png', alt: 'Magnets Screenshot 3', class: 'fadeImg') %>
     <%= image_tag('mag_ss4.png', alt: 'Magnets Screenshot 4', class: 'fadeImg') %>
-    <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#mag")'>
-      <span class="glyphicon glyphicon-circle-arrow-left">This is for magnets</span>
-    </button>
+
   </div>
   <div id = "tbc" class = "ad">
+    <div class = 'infoHolder'>
+      <%= image_tag('tbc-alexa-icon.png', alt: 'TextbookCheck Icon', id: 'tbcIconSmooth', class: 'infoIcon') %>
+      <p class = 'infoText' id = 'tbcText'>Quickly and easily find affordable textbooks</p>
+      <a href='https://www.amazon.com/Voltrace-TextbookCheck/dp/B071DVTW98/'>
+        <%= image_tag('alexa_badge.png', alt: 'Get it on Amazon', class: 'store_icon alexa_icon', id: 'tbcAlexa')%>
+      </a>
+      <button type="button" class="btn btn-info btn-sm backButton" onclick='fadeOut("#tbc")'>
+        <span class="glyphicon glyphicon-circle-arrow-left"></span>
+      </button>
+    </div>
     <%= image_tag('mag_ss1.png', alt: 'TextbookCheck Screenshot 1', class: 'fadeImg') %>
     <%= image_tag('mag_ss2.png', alt: 'TextbookCheck Screenshot 2', class: 'fadeImg') %>
     <%= image_tag('mag_ss3.png', alt: 'TextbookCheck Screenshot 3', class: 'fadeImg') %>
     <%= image_tag('mag_ss4.png', alt: 'TextbookCheck Screenshot 4', class: 'fadeImg') %>
-    <button type="button" class="btn btn-default btn-sm" onclick='fadeOut("#tbc")'>
-      <span class="glyphicon glyphicon-circle-arrow-left">This is for textbookCheck</span>
-    </button>
   </div>
 </div>
