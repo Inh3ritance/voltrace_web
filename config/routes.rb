@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   get '/magnets_privacy', to: 'voltrace_main#magnets_privacy_policy'
 
+  get '/textbookcheck_privacy', to: 'voltrace_main#textbookcheck_privacy_policy'
+
   root 'voltrace_main#home'
 end

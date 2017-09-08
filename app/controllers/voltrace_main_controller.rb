@@ -13,4 +13,7 @@ class VoltraceMainController < ApplicationController
 
   def magnets_privacy_policy
   end
+
+  def textbookcheck_privacy_policy
+  end
 end

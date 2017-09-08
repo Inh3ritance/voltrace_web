@@ -26,7 +26,7 @@ showedTBC = false
       activateScene('#magIconSmooth', '#magText', '#magApple', '#magGoogle', false)
       showedMag = true
   else
-    $('.privacy').attr('href', '/textbookCheck_privacy')
+    $('.privacy').attr('href', '/textbookcheck_privacy')
     if not showedTBC
       activateScene('#tbcIconSmooth', '#tbcText', '#1234', '#1234', true)
       showedTBC = true
