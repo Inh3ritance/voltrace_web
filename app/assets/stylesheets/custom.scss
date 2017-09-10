@@ -67,7 +67,6 @@ header{
   }
 
   .dropdown-content {
-    left:auto; // only works with position:relative;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -75,6 +74,7 @@ header{
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 2;
+    left:auto !important; // only works with position:relative;
   }
 
   .dropdown-content a {
