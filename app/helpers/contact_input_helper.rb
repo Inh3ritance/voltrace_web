@@ -1,0 +1,2 @@
+module ContactInputHelper
+end

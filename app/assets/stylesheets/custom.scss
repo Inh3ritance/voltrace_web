@@ -220,12 +220,11 @@ header{
       width: 100%;
       .infoIcon{
         width: 12%;
-        margin: auto;
+        margin: 0 auto 10px auto;
         padding-top: 2.5%;
         padding-bottom: 2.5%;
         display: block;
         opacity: 0;
-        margin-bottom: 10px;
       }
       .infoText{
         display:block;
@@ -268,7 +267,8 @@ header{
     white-space: nowrap;
     text-align: center;
     z-index: 1;
-    background-color: black;
+    background-image: url(image_path('Blueprint.jpg'));
+    background-size: 100% 100%;
     .dummy{
       display: inline-block;
       height: 100%;

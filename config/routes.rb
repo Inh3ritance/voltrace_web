@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'contact_input/new'
+
   get '/about', to: 'voltrace_main#about'
 
   get '/contact_us', to: 'voltrace_main#contact_us'
@@ -11,4 +13,5 @@ Rails.application.routes.draw do
   get '/textbookcheck_privacy', to: 'voltrace_main#textbookcheck_privacy_policy'
 
   root 'voltrace_main#home'
+
 end
