@@ -6,6 +6,7 @@ class VoltraceMainController < ApplicationController
   end
 
   def contact_us
+    @contact = Contact.new(params[:contact])
   end
 
   def dreamjump_privacy_policy
