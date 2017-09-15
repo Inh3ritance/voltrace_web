@@ -8,28 +8,22 @@ divSize = 0;
 logoSize = 0;
 isdropped = false
 backButtons = $('.backButton')
-showedMag = false
-showedDJ = false
-showedTBC = false
 
 @fade = (scene) ->
   $(scene).addClass('fadeIn')
   $('.privacy').addClass('fadeIn')
   if scene is dj
     $('.privacy').attr('href', '/dreamjump_privacy');
-    if not showedDJ
+    if $('#djIconSmooth').css('opacity') < 1
       activateScene('#djIconSmooth', '#djText', '#djApple', '#djGoogle', false)
-      showedDJ = true
   else if scene is mag
     $('.privacy').attr('href', '/magnets_privacy');
-    if not showedMag
+    if $('#magIconSmooth').css('opacity') < 1
       activateScene('#magIconSmooth', '#magText', '#magApple', '#magGoogle', false)
-      showedMag = true
   else
     $('.privacy').attr('href', '/textbookcheck_privacy')
-    if not showedTBC
+    if $('#tbcIconSmooth').css('opacity') < 1
       activateScene('#tbcIconSmooth', '#tbcText', '#1234', '#1234', true)
-      showedTBC = true
 
 
 @fadeOut = (scene) ->
