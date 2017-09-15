@@ -7,13 +7,11 @@
         <div class = "glyphicon glyphicon-align-justify dropbtn" id = "menu" onclick = "show()"></div>
         <div id="vDropdown" class="dropdown-content dropdown-menu-right">
           <%= link_to 'Home', root_path %>
-          <%= link_to 'About', about_path %>
           <%= link_to 'Contact Us', contact_us_path %>
         </div>
       </div>
       <ul class="nav navbar-nav navbar-right" id ="topNav">
         <li><%= link_to '',   root_path, class: 'glyphicon glyphicon-home' %></li>
-        <li><%= link_to 'About', about_path %></li>
         <li><%= link_to 'Contact Us', contact_us_path %></li>
       </ul>
     </nav>
