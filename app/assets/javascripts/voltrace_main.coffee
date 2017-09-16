@@ -72,7 +72,7 @@ window.onclick = (event) ->
   $('body').css('padding-top', $('header').height() + "px")
   $('#ad_hold').width((window.innerWidth*3)/5)
   if window.innerWidth >= window.innerHeight
-    adSize = '250px'
+    adSize = '304px'
     logoSize = 20;
     $('.infoText').css({"font-size": "1.5em", "padding" : "0 0 2.5% 0"})
     $('.infoIcon').css("padding", "2.5% 0 2.5% 0")
