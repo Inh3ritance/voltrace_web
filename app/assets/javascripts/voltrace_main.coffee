@@ -68,6 +68,8 @@ window.onclick = (event) ->
     openDropdown.classList.remove('show')
 
 @resizeAll = () ->
+  alert('Height' + window.innerHeight)
+  alert('Width' + window.innerWidth)
   divSize = window.innerHeight - $('header').height() - $('footer').height()
   $('body').css('padding-top', $('header').height() + "px")
   $('#ad_hold').width((window.innerWidth*3)/5)
