@@ -68,23 +68,27 @@ window.onclick = (event) ->
     openDropdown.classList.remove('show')
 
 @resizeAll = () ->
-  alert('Height' + window.innerHeight)
-  alert('Width' + window.innerWidth)
   divSize = window.innerHeight - $('header').height() - $('footer').height()
   $('body').css('padding-top', $('header').height() + "px")
   $('#ad_hold').width((window.innerWidth*3)/5)
-  $('#yield').height(divSize/2)
-  $('.holder').height(divSize/2)
   if window.innerWidth >= window.innerHeight
-    adSize = window.innerHeight/3
+    adSize = '250px'
     logoSize = 20;
     $('.infoText').css({"font-size": "1.5em", "padding" : "0 0 2.5% 0"})
     $('.infoIcon').css("padding", "2.5% 0 2.5% 0")
+    $('#yield').height('400px')
+    $('.holder').height('400px')
+    $('#footer').css({'position': 'absolute', 'top': '100%'})
+    $('#header').css({'position': 'absolute', 'top': '0'})
   else
     adSize = window.innerHeight/4.5
     logoSize = 35;
     $('.infoText').css({"font-size": "0.5em", "padding" : "0 0 5% 0"})
     $('.infoIcon').css("padding", "5% 0 5% 0")
+    $('#yield').height(divSize/2)
+    $('.holder').height(divSize/2)
+    $('#footer').css({'position': '', 'top': ''})
+    $('#header').css({'position': '', 'top': ''})
   $('#ad_hold').height(adSize)
   $('#logo').width(logoSize +  '%')
 
