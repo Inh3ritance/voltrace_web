@@ -33,11 +33,7 @@
   transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
   -webkit-transition: opacity 0.3s;
-}
-//Moves Icon to Center Slightly Above
-.iconToCenter{
-  transform: translate(500px, -50%) !important;
-  transition: transform 0.1s !important;
+
 }
 
 //Body
@@ -210,6 +206,14 @@ header{
     top: 0;
     bottom: 0;
     right: 0;
+    -webkit-animation-name: imgFade;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 80s;
+    -moz-animation-name: imgFade;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 80s;
     animation-name: imgFade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -299,6 +303,8 @@ header{
       transform: scale(1, 1);
     }
     .app_icon:hover{
+      -moz-transition: transform 0.3s;
+      -webkit-transition: transform 0.3s;
       transition: transform 0.3s;
       -webkit-transform:scale(1.2,1.2);
       -moz-transform:scale(1.2, 1.2);
@@ -325,15 +331,23 @@ header{
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     .fadeImg:nth-of-type(1){
+      -moz-animation-delay: 60s;
+      -webkit-animation-delay: 60s;
       animation-delay: 60s;
     }
     .fadeImg:nth-of-type(2){
+      -moz-animation-delay: 40s;
+      -webkit-animation-delay: 40s;
       animation-delay: 40s;
     }
     .fadeImg:nth-of-type(3){
+      -moz-animation-delay: 20s;
+      -webkit-animation-delay: 20s;
       animation-delay: 20s;
     }
     .fadeImg:nth-of-type(4){
+      -moz-animation-delay: 0s;
+      -webkit-animation-delay: 0s;
       animation-delay: 0s;
     }
 
@@ -347,15 +361,23 @@ header{
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     .fadeImg:nth-of-type(1){
+      -moz-animation-delay: 60s;
+      -webkit-animation-delay: 60s;
       animation-delay: 60s;
     }
     .fadeImg:nth-of-type(2){
+      -moz-animation-delay: 40s;
+      -webkit-animation-delay: 40s;
       animation-delay: 40s;
     }
     .fadeImg:nth-of-type(3){
+      -moz-animation-delay: 20s;
+      -webkit-animation-delay: 20s;
       animation-delay: 20s;
     }
     .fadeImg:nth-of-type(4){
+      -moz-animation-delay: 0s;
+      -webkit-animation-delay: 0s;
       animation-delay: 0s;
     }
   }
@@ -369,15 +391,23 @@ header{
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     .fadeImg:nth-of-type(1){
+      -moz-animation-delay: 60s;
+      -webkit-animation-delay: 60s;
       animation-delay: 60s;
     }
     .fadeImg:nth-of-type(2){
+      -moz-animation-delay: 40s;
+      -webkit-animation-delay: 40s;
       animation-delay: 40s;
     }
     .fadeImg:nth-of-type(3){
+      -moz-animation-delay: 20s;
+      -webkit-animation-delay: 20s;
       animation-delay: 20s;
     }
     .fadeImg:nth-of-type(4){
+      -moz-animation-delay: 0s;
+      -webkit-animation-delay: 0s;
       animation-delay: 0s;
     }
   }
