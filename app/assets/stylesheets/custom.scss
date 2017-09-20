@@ -234,7 +234,7 @@ header{
       z-index: 3;
       width: 100%;
       .infoIcon{
-        width: 12%;
+        height: 40%;
         margin: 0 auto 10px auto;
         padding-top: 2.5%;
         padding-bottom: 2.5%;
@@ -271,9 +271,9 @@ header{
       }
       .backButton{
         display: block;
-        float: left;
+        bottom: 0;
+        left: 0;
         position: absolute;
-        margin-top: 11%;
       }
     }
   }
@@ -292,7 +292,7 @@ header{
     }
     .app_icon{
       position: relative;
-      width: 10%;
+      height: 35%;
       vertical-align: middle;
       display: inline-block;
       transition: transform 0.3s;

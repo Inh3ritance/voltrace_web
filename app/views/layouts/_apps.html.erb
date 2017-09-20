@@ -46,14 +46,14 @@
   </div>
   <div id = "tbc" class = "ad">
     <div class = 'infoHolder'>
+      <button type="button" class="btn btn-info btn-sm backButton" onclick='fadeOut("#tbc")'>
+        <span class="glyphicon glyphicon-circle-arrow-left"></span>
+      </button>
       <%= image_tag('tbc_icon.png', alt: 'TextbookCheck Icon', id: 'tbcIconSmooth', class: 'infoIcon') %>
       <p class = 'infoText' id = 'tbcText'>Quickly and easily find affordable textbooks</p>
       <a href='https://www.amazon.com/Voltrace-TextbookCheck/dp/B071DVTW98/'>
         <%= image_tag('alexa_badge.png', alt: 'Get it on Amazon', class: 'store_icon alexa_icon', id: 'tbcAlexa')%>
       </a>
-      <button type="button" class="btn btn-info btn-sm backButton" onclick='fadeOut("#tbc")'>
-        <span class="glyphicon glyphicon-circle-arrow-left"></span>
-      </button>
     </div>
     <%= image_tag('alexa_screenshot0.png', alt: 'TextbookCheck Screenshot 1', class: 'fadeImg') %>
     <%= image_tag('alexa_ss1.png', alt: 'TextbookCheck Screenshot 2', class: 'fadeImg') %>

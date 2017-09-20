@@ -7,7 +7,8 @@ adSize = 0;
 divSize = 0;
 logoSize = 0;
 isdropped = false
-backButtons = $('.backButton')
+backButtonMargin = 0;
+
 
 @fade = (scene) ->
   $(scene).addClass('fadeIn')
@@ -72,7 +73,7 @@ window.onclick = (event) ->
   $('body').css('padding-top', $('header').height() + "px")
   $('#ad_hold').width((window.innerWidth*3)/5)
   if window.innerWidth >= window.innerHeight
-    adSize = '304px'
+    adSize = 304
     logoSize = 20;
     $('.infoText').css({"font-size": "1.5em", "padding" : "0 0 2.5% 0"})
     $('.infoIcon').css("padding", "2.5% 0 2.5% 0")
@@ -90,7 +91,9 @@ window.onclick = (event) ->
     $('#footer').css({'position': '', 'top': ''})
     $('#header').css({'position': '', 'top': ''})
   $('#ad_hold').height(adSize)
+  $('.infoHolder').height(adSize);
   $('#logo').width(logoSize +  '%')
+  #$('.backButton').css({'margin-top': adSize/3.5})
 
 @activateScene = (icon, info, apple0, google, alexa) ->
   $(icon).transition({y: '10px', opacity: 1}, delay: 100)
