@@ -46,8 +46,11 @@ body{
 
 //Header
 header{
-  display: block !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color:#2E2F30;
+  height: 7%;
   .container {
     margin-left: 5% !important;
     .dropbtn {
@@ -94,7 +97,6 @@ header{
       position: absolute;
       right: 1%;
       top: 0;
-      width: 40%;
       li {
         font-size: 100%;
       }
