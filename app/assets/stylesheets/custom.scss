@@ -46,80 +46,76 @@ body{
 
 //Header
 header{
-
   display: block !important;
-
-  .dropbtn {
-    display: block;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 2;
-    left:auto !important; // only works with position:relative;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown a:hover {background-color: #f1f1f1}
-
-  .show {
-    display:block !important;
-  }
-
   background-color:#2E2F30;
-  li{
-    font-size:100%;
-  }
-  #menu{
-    display:inline-block;
-    font-size:30px;
-  }
-  #logo{
-    padding-right:1%;
-    font-size: 200%;
-  }
-  #bird_logo{
-    padding:1px;
-  }
-  .container{
-    margin-left:5% !important;
-  }
+  .container {
+    margin-left: 5% !important;
+    .dropbtn {
+      display: block;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
 
-  li{
-    font-size:100%;
-  }
-  #logoheader{
-    padding-right:1%;
-    font-size: 200%;
-  }
-  #bird_logo{
-    padding:1px;
-  }
-  .container{
-    margin-left:5% !important;
-  }
+    .dropdown {
+      position: absolute;
+      right: 1%;
+      top: 0;
+    }
 
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      left: auto !important; // only works with position:relative;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #f1f1f1
+    }
+
+    .show {
+      display: block !important;
+    }
+    ul {
+      position: absolute;
+      right: 1%;
+      top: 0;
+      width: 40%;
+      li {
+        font-size: 100%;
+      }
+    }
+    #menu {
+      display: inline-block;
+      font-size: 30px;
+    }
+    #logo {
+      padding-right: 1%;
+      font-size: 200%;
+    }
+    #bird_logo {
+      padding: 1px;
+    }
+    #logoheader {
+      padding-right: 1%;
+      font-size: 200%;
+      width: 10%;
+    }
+  }
 }
 
 //Logo Holder
@@ -292,7 +288,7 @@ header{
     }
     .app_icon{
       position: relative;
-      height: 35%;
+      height: 32%;
       vertical-align: middle;
       display: inline-block;
       transition: transform 0.3s;

@@ -40,7 +40,7 @@ backButtonMargin = 0;
   i = 0
   listItems = a
   dropdown = $('.dropdown-content')
-  if window.innerWidth < 770 #arbitrary number
+  if window.innerWidth < window.innerHeight
     listItem.style.display = 'none' for listItem in listItems
     b.css({visibility: 'visible'})
   else
