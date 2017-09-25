@@ -63,6 +63,7 @@ window.onclick = (event) ->
   if not event.target.matches('.dropbtn')
     dropdowns = $('.dropdown-content')
     @checkShow drop for drop in dropdowns
+    isdropped = false
 
 @checkShow = (openDropdown) ->
   if openDropdown.classList.contains('show')
