@@ -85,7 +85,7 @@ window.onclick = (event) ->
   else
     adSize = window.innerHeight/4.5
     logoSize = 35;
-    $('.infoText').css({"font-size": "0.5em", "padding" : "0 0 5% 0"})
+    $('.infoText').css({"font-size": "0.8em", "padding" : "0 0 5% 0"})
     $('.infoIcon').css("padding", "5% 0 5% 0")
     $('#yield').height(divSize/2)
     $('.holder').height(divSize/2)
