@@ -8,9 +8,20 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= render 'layouts/shim' %>
+  <%= display_meta_tags site: 'Voltrace',
+                        title: '',
+                        description: 'Voltrace Home Page',
+                        keywords: 'voltrace, dreamjump, magnets, android, ios, app, alexa, textbookcheck, university, textbook, search',
+                        follow: true,
+                        canonical: 'www.voltrace.com'%>
+  <% set_meta_tags title: 'Voltrace',
+                   description: 'Voltrace Home Page',
+                   keywords: 'voltrace, dreamjump, magnets, android, ios, app, alexa, textbookcheck, university, textbook, search',
+                   follow: true,
+                   canonical: 'www.voltrace.com'
+  %>
 
 </head>
-
   <body onload="startLoop(); resizeAll()" onresize="startLoop(); resizeAll()">
     <%= render 'layouts/header'%>
     <div class = "holder">
